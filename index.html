@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:300px) and (max-width:500px){
+            
+        
+    .top{
+        border: 1px solid black;
+        height: 600px;
+        display: grid;
+        /* align-content: center; */
+        text-align: center;
+        grid-template-columns: repeat(6,100px);
+        grid-template-rows: 100px,100px 100px;
+        gap: 5px;
+        
+        
+    }
+    .bottom{
+        display: grid;
+       background-color:pink;
+       align-content: center ;
+      
+    }
+    .c1{
+        grid-column-start:2 ;
+        grid-column-end: 6;
+        /* height: 100px; */
+    }
+    .c2{
+        grid-row-start:1 ;
+        grid-row-end:6 ;
+        /* height: 600px; */
+    }
+    .c3{
+       
+        grid-row-start:3 ;
+        grid-row-end: 6;
+    }
+    .c4{
+       
+       grid-row-start:3 ;
+       grid-row-end: 6;
+   }
+   
+   .c5{
+       
+       grid-row-start:3 ;
+       grid-row-end: 6;
+   }
+}
+@media screen and (min-width:501px) and (max-width:800px){
+.top{
+            border: 5px solid skyblue;
+            display: grid;
+            grid-template-columns: repeat(5,200px);
+            grid-template-rows: 100px 100px 100px;
+            /* height: 500px; */
+            /* width: 00px; */
+        
+        }
+        .bottom{
+            display: grid;
+            background-color: cadetblue;
+            border: 2px solid black;
+            align-content: center;
+            justify-content: center;
+        }
+        .cd1{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .cd2{
+            grid-row-start: 2;
+            grid-row-end:4;
+        }
+        .cd3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .cd4{
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        .cd5{
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }}
+        @media screen and (min-width:801px) and (max-width:1000px){
+        .top{
+            border: 1px solid black;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: 100px 100px ;
+            gap: 10px;
+            background-color: green;
+            align-content: space-around;
+        }
+        .bottom{
+            background-color: red;
+            
+        }
+        .c1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+           grid-row-start: 2;
+           grid-row-end: 5;
+        }
+    }
+       
+        
+
+    
+</style>
+</head>
+<body>
+    <div class="top">
+        <div class="bottom cd1">header</div>
+        <div class="bottom cd2">menu</div>
+        <div class="bottom cd3">main</div>
+        <div class="bottom cd4">right</div>
+        <div class="bottom cd5">footer</div>
+    </div>
+    
+    
+</body>
+</html>
